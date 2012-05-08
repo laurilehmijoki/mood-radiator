@@ -22,6 +22,7 @@
   }
 
   function loadConfig() {
+    localStorage.clear()
     $.get('/config', function(config) {
       $('.clientContainer').empty()
       var isRadiatorMode = document.location.href.match(/\/\?radiator=true$/)
